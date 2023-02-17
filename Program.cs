@@ -80,13 +80,27 @@
 
 
 
-Console.Write("Введите число: ");
-int Value = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число: ");
+// int Value = Convert.ToInt32(Console.ReadLine());
 
 
-if (Value % 2 == 0) {
-     Console.WriteLine ("Четное");
-}
-else{
-    Console.WriteLine ("Нечетное");
+// if (Value % 2 == 0) {
+//      Console.WriteLine ("Четное");
+// }
+// else{
+//     Console.WriteLine ("Нечетное");
+// }
+
+
+
+
+
+Console.Write("Введите число N: ");
+int N = Convert.ToInt32(Console.ReadLine());
+int negativeN = 1;
+while (negativeN <= N) {
+    if (negativeN % 2 == 0) {
+        Console.WriteLine(negativeN);
+    }
+    negativeN++;
 }

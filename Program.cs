@@ -52,26 +52,41 @@
 
 
 
-Console.Write("Введите первое число: ");
-int firstValue = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите первое число: ");
+// int firstValue = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите второе число: ");
-int secondValue = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите второе число: ");
+// int secondValue = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите третье число: ");
-int thirdValue = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите третье число: ");
+// int thirdValue = Convert.ToInt32(Console.ReadLine());
 
-if (firstValue > secondValue) {
-    if (firstValue > thirdValue){
-        Console.WriteLine ("max: " + firstValue);
-    }
-    else {
-        Console.WriteLine ("max: " + thirdValue);
-    }
+// if (firstValue > secondValue) {
+//     if (firstValue > thirdValue){
+//         Console.WriteLine ("max: " + firstValue);
+//     }
+//     else {
+//         Console.WriteLine ("max: " + thirdValue);
+//     }
+// }
+// else if (secondValue > thirdValue){
+//     Console.WriteLine ("max: " + secondValue);
+// }
+// else {
+//     Console.WriteLine ("max: " + thirdValue);
+// }
+
+
+
+
+
+Console.Write("Введите число: ");
+int Value = Convert.ToInt32(Console.ReadLine());
+
+
+if (Value % 2 == 0) {
+     Console.WriteLine ("Четное");
 }
-else if (secondValue > thirdValue){
-    Console.WriteLine ("max: " + secondValue);
-}
-else {
-    Console.WriteLine ("max: " + thirdValue);
+else{
+    Console.WriteLine ("Нечетное");
 }

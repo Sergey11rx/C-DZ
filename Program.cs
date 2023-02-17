@@ -34,15 +34,44 @@
 
 
 
+// Console.Write("Введите первое число: ");
+// int firstValue = Convert.ToInt32(Console.ReadLine());
+
+// Console.Write("Введите второе число: ");
+// int secondValue = Convert.ToInt32(Console.ReadLine());
+
+// if (firstValue > secondValue) {
+//     Console.WriteLine ("Число " + firstValue + " больше чем " + secondValue);
+// }
+// else {
+//     Console.WriteLine ("Число " + secondValue + " больше чем " + firstValue);
+// }
+
+
+
+
+
+
 Console.Write("Введите первое число: ");
 int firstValue = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Введите второе число: ");
 int secondValue = Convert.ToInt32(Console.ReadLine());
 
+Console.Write("Введите третье число: ");
+int thirdValue = Convert.ToInt32(Console.ReadLine());
+
 if (firstValue > secondValue) {
-    Console.WriteLine ("Число " + firstValue + " больше чем " + secondValue);
+    if (firstValue > thirdValue){
+        Console.WriteLine ("max: " + firstValue);
+    }
+    else {
+        Console.WriteLine ("max: " + thirdValue);
+    }
+}
+else if (secondValue > thirdValue){
+    Console.WriteLine ("max: " + secondValue);
 }
 else {
-    Console.WriteLine ("Число " + secondValue + " больше чем " + firstValue);
+    Console.WriteLine ("max: " + thirdValue);
 }

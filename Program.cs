@@ -33,7 +33,7 @@
 
 
 
-
+//Задача2
 // Console.Write("Введите первое число: ");
 // int firstValue = Convert.ToInt32(Console.ReadLine());
 
@@ -51,7 +51,7 @@
 
 
 
-
+//Задача 4
 // Console.Write("Введите первое число: ");
 // int firstValue = Convert.ToInt32(Console.ReadLine());
 
@@ -79,7 +79,7 @@
 
 
 
-
+//Задача 6
 // Console.Write("Введите число: ");
 // int Value = Convert.ToInt32(Console.ReadLine());
 
@@ -94,7 +94,7 @@
 
 
 
-
+Задача 8
 Console.Write("Введите число N: ");
 int N = Convert.ToInt32(Console.ReadLine());
 int negativeN = 1;

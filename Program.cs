@@ -94,13 +94,19 @@
 
 
 
-Задача 8
-Console.Write("Введите число N: ");
-int N = Convert.ToInt32(Console.ReadLine());
-int negativeN = 1;
-while (negativeN <= N) {
-    if (negativeN % 2 == 0) {
-        Console.WriteLine(negativeN);
-    }
-    negativeN++;
-}
+// Задача 8
+// Console.Write("Введите число N: ");
+// int N = Convert.ToInt32(Console.ReadLine());
+// int negativeN = 1;
+// while (negativeN <= N) {
+//     if (negativeN % 2 == 0) {
+//         Console.WriteLine(negativeN);
+//     }
+//     negativeN++;
+// }
+
+
+
+
+
+

@@ -186,27 +186,27 @@
 // [-4, -6, 89, 6] -> 0
 
 
-int[] array = numberArray(4, -100, 100);
-Console.WriteLine($"Массив: [{String.Join("; ", array)}]");
+// int[] array = numberArray(4, -100, 100);
+// Console.WriteLine($"Массив: [{String.Join("; ", array)}]");
 
-int[] numberArray(int size, int min, int max){
-    int[] result = new int[size]; 
+// int[] numberArray(int size, int min, int max){
+//     int[] result = new int[size]; 
 
-    for (int i = 0; i < size; i++){ 
-        result[i] = new Random().Next(min, max + 1);
-    }
-    return result;  
-}
+//     for (int i = 0; i < size; i++){ 
+//         result[i] = new Random().Next(min, max + 1);
+//     }
+//     return result;  
+// }
 
-int count = 0;
-int size = array.Length;
+// int count = 0;
+// int size = array.Length;
 
-for (int i = 0; i < size; i++){
-    if(array[i] % 2 != 0){
-        count += array[i];
-    }
-}    
-Console.WriteLine($"Сумма чисел на нечетных позициях в массиве: {count}");
+// for (int i = 0; i < size; i++){
+//     if(array[i] % 2 != 0){
+//         count += array[i];
+//     }
+// }    
+// Console.WriteLine($"Сумма чисел на нечетных позициях в массиве: {count}");
 
 
 

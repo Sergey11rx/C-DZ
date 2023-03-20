@@ -245,50 +245,65 @@
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
 
-int[,] GetMatrix(int rows, int columns, int minValue, int maxValue){
-    int[,] matrix = new int [rows, columns];
-        for (int i = 0; i < matrix.GetLength(0); i++){
-            for (int j = 0; j < matrix.GetLength(1); j++){
-                matrix[i, j] = new Random().Next(minValue, maxValue + 1);
-            }
-        }
-    return matrix;
-}
+// int[,] GetMatrix(int rows, int columns, int minValue, int maxValue){
+//     int[,] matrix = new int [rows, columns];
+//         for (int i = 0; i < matrix.GetLength(0); i++){
+//             for (int j = 0; j < matrix.GetLength(1); j++){
+//                 matrix[i, j] = new Random().Next(minValue, maxValue + 1);
+//             }
+//         }
+//     return matrix;
+// }
 
 
-int[,] AvgMatrix(int[,] inputMatrix){
-    for (int i = 0; i < inputMatrix.GetLength(0); i++){
-        int result = 0;
-        for (int j = 0; j < inputMatrix.GetLength(1); j++){
-            result += inputMatrix[i, j];
-        }
-        result /= inputMatrix.GetLength(0);
-    }
-    return inputMatrix;
-}
-
-
-
-void PrintMatrix(int[,] matrix){
-    for (int i = 0; i < matrix.GetLength(0); i++){
-        for (int j = 0; j < matrix.GetLength(1); j++){
-            Console.Write(matrix[i, j] + "\t");
-        }
-        Console.WriteLine();
-    }
-}
-
-int[,] resultMatrix = GetMatrix(5, 5, 1, 10);
-PrintMatrix(resultMatrix);
-
-Console.WriteLine($"Среднее арифметическое каждого столбца: ");
-PrintMatrix(AvgMatrix(resultMatrix));
+// int[,] AvgMatrix(int[,] inputMatrix){
+//     for (int i = 0; i < inputMatrix.GetLength(0); i++){
+//         int result = 0;
+//         for (int j = 0; j < inputMatrix.GetLength(1); j++){
+//             result += inputMatrix[i, j];
+//         }
+//         result /= inputMatrix.GetLength(0);
+//     }
+//     return inputMatrix;
+// }
 
 
 
+// void PrintMatrix(int[,] matrix){
+//     for (int i = 0; i < matrix.GetLength(0); i++){
+//         for (int j = 0; j < matrix.GetLength(1); j++){
+//             Console.Write(matrix[i, j] + "\t");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+// int[,] resultMatrix = GetMatrix(5, 5, 1, 10);
+// PrintMatrix(resultMatrix);
+
+// Console.WriteLine($"Среднее арифметическое каждого столбца: ");
+// PrintMatrix(AvgMatrix(resultMatrix));
 
 
 
 
 
 
+
+
+
+
+
+// void PermutationRows(int[,] matrix){
+//     for (int i = 0; i < matrix.GetLength(0); i++){
+//         for (int j = 0; j < matrix.GetLength(1); j++){
+//             for (int k = 0; k < matrix.GetLength(1) - 1; k++){
+//                 if(matrix[i, k] < matrix[i, k + 1]){
+//                 int temp = matrix[i, k + 1]; 
+//                 matrix[i, k + 1] = matrix[i, k];
+//                 matrix[i, k] = temp;
+//                 } 
+//             }
+//         }
+//     }
+// }
